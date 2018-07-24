@@ -30,9 +30,9 @@ class hometest(mytestcase):
 
         """搜索订单"""
 
-        self.driver.find_element_by_css_selector("#personalCenter2-leftNav > ul > li.menu.open > ul > li.selected > a").click()
+        self.driver.find_element_by_css_selector("#personalCenter2-leftNav > ul > li.menu.open > ul > li:nth-child(1) > a").click()
 
-        self.assertIn("权大师_我的订单列表", self.driver.title)
+        self.assertIn("权大师_我的商标", self.driver.title)
         print(self.driver.title)
 
         self.driver.find_element_by_css_selector("#s-form > ul > li:nth-child(1) > input").send_keys("Z80510326116")
@@ -71,7 +71,7 @@ class hometest(mytestcase):
 
         self.driver.find_element_by_css_selector("#edit-category > div.modal-button > a.button.save").click()
         time.sleep(2)
-        print("尼斯分类修改为第{}类".format(suiji))
+        print("尼斯分类修改为第{}类".format(suiji-1))
         time.sleep(2)
 
         """申请人信息"""

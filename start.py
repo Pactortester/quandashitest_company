@@ -84,5 +84,6 @@
 #     t1.start()
 #     time.sleep(1)
 import random
-
-print(random.randint(2, 46))
+suiji=random.randint(2, 46)
+print(suiji-1)
+print(suiji)

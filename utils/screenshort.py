@@ -4,7 +4,7 @@ import time
 
 
 def get_screenshort(driver,file_name):
-    base_path = "F:\\quandashitest\\image\\"
+    base_path = "G:\\quandashitest_company\\quandashitest_company\\image\\"
     time_c=time.strftime("%Y-%m-%d_%H-%M-%S_")
     path = base_path + time_c+file_name
     time.sleep(1)

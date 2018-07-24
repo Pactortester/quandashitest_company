@@ -63,7 +63,7 @@ def send_mail(path):
 
 
 if __name__ == "__main__":
-    suite = unittest.defaultTestLoader.discover("F:\\quandashitest\\case","*test.py")
+    suite = unittest.defaultTestLoader.discover("G:\\quandashitest_company\\quandashitest_company\\case\\","*test.py")
     # unittest.TextTestRunner().run(suite)
     path = os.path.dirname(__file__)
     now = time.strftime("%Y-%m-%d_%H-%M-%S")
