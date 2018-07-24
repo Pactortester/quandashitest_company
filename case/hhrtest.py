@@ -94,6 +94,8 @@ class hhrtest(mytestcase):
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div.order-detail-fix > div > div.right > div.pay-btns > a").click()
         get_screenshort(self.driver,"fwddtest.png")
 
+        #self.driver.find_element_by_css_selector("#layui-layer100001 > div.layui-layer-btn.layui-layer-btn- > a.layui-layer-btn0").click()
+
         print("测试通过!")
 
 
@@ -167,7 +169,7 @@ class hhrtest(mytestcase):
 
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(7) > div > a.mybtn.mybtn-inverse.mybtn-lg.saveAll").click()
 
-        get_screenshort(self.driver,"hhrsbzctest.png")
+
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(7) > div > a:nth-child(2)").click()
 
         time.sleep(2)
