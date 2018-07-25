@@ -24,7 +24,7 @@ class hhrtest(mytestcase):
 
         self.driver.find_element_by_css_selector("#personalCenter2-leftNav > ul > li.menu.open > ul > li:nth-child(1) > a").click()
 
-        self.driver.find_element_by_css_selector("#s-form > ul > li:nth-child(1) > input").send_keys("H80724472157")
+        self.driver.find_element_by_css_selector("#s-form > ul > li:nth-child(1) > input").send_keys("H80725352668")
         self.driver.find_element_by_css_selector("#s-form > ul > li:nth-child(8) > input").click()
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div.order-page > div.tabsPanel > div > div > table > tbody > tr:nth-child(2) > td:nth-child(9) > div.td-handle > a").click()
         time.sleep(3)
@@ -111,6 +111,8 @@ class hhrtest(mytestcase):
         self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
         time.sleep(1)
         self.driver.find_element_by_css_selector("#personalCenter2-header > div.header-box > div.header-box > div.header-nav > a").click()
+        #新版提示
+        self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div[1]/div/a").click()
         self.driver.find_element_by_css_selector("#personalCenter2-leftNav > ul > li:nth-child(2) > ul > li:nth-child(1) > a").click()
 
         """填写商标信息"""

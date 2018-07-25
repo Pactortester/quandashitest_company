@@ -115,6 +115,9 @@ class znzztest(mytestcase):
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.section-btns.clearfix > a:nth-child(2)").click()
         time.sleep(1)
+        self.driver.find_element_by_css_selector(
+            "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.section-btns.clearfix > a:nth-child(2)").click()
+        time.sleep(1)
         get_screenshort(self.driver, "znzztest.png")
 
         for i in self.driver.find_elements_by_css_selector("body > div.smartRegister-page > div.orderinfo-wrap > div.last-pay.personal-last-pay > ul > li.row-sense > em > i"):
