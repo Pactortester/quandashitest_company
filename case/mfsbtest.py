@@ -35,13 +35,15 @@ class gnsbtest(mytestcase):
         print(self.driver.title)
 
         self.driver.add_cookie({'name': 'QDS_COOKIE',
-                                'value': '458ef663c89c242cfe94d88fdf2a9f7d320bd6cd',  # 一周有效期  2018-7-9_10-46
+                                'value': 'f3b87cdf03cf8943321eda10e254a4837a0444ab',  # 一周有效期  2018-7-9_10-46
                                 'Domain': '.quandashi.com'})
 
         self.driver.refresh()
 
         self.driver.find_element_by_css_selector("body > div.brandSearch2-page > div > div.search > div.searchPanel.clearfix > input.input.search-text").send_keys("测试")
         self.driver.find_element_by_css_selector("#btnSearchkey").click()
+
+        time.sleep(4)
 
         self.assertIn("测试_全球更好用的商标搜索_权大师",self.driver.title)
 
