@@ -16,7 +16,7 @@ class dengLuPage:
         self.open_page()
 
         self.driver.add_cookie({'name': 'QDS_COOKIE',
-              'value': 'f3b87cdf03cf8943321eda10e254a4837a0444ab', #一周有效期  2018-7-9_10-46    mfsbtest.py
+              'value': '7bac7820d2f28e283f82a7e17cee416ff04dc058', #一周有效期      mfsbtest.py
               'Domain': '.quandashi.com'})
 
         self.driver.refresh()
