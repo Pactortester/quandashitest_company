@@ -78,6 +78,7 @@ class znzztest(mytestcase):
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > dl > dt:nth-child(10) > span").click()
 
+        print("选择了第2类商标分类!")
 
 
         self.driver.find_element_by_css_selector(

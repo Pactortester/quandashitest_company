@@ -27,6 +27,8 @@ class hhrtest(mytestcase):
 
         self.driver.find_element_by_css_selector("#personalCenter2-leftNav > ul > li.menu.open > ul > li:nth-child(1) > a").click()
 
+        time.sleep(3)
+
         self.driver.find_element_by_css_selector("#s-form > ul > li:nth-child(1) > input").send_keys("H80725418274")
         self.driver.find_element_by_css_selector("#s-form > ul > li:nth-child(8) > input").click()
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div.order-page > div.tabsPanel > div > div > table > tbody > tr:nth-child(2) > td:nth-child(9) > div.td-handle > a").click()
