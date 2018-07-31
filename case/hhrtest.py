@@ -67,6 +67,8 @@ class hhrtest(mytestcase):
         self.driver.find_element_by_css_selector("#section-selfchoice > div.group-left > ul > li.list.open > div.title-second.open > dl > dt:nth-child(9) > span").click()
         self.driver.find_element_by_css_selector("#section-selfchoice > div.group-left > ul > li.list.open > div.title-second.open > dl > dt:nth-child(10) > span").click()
 
+        time.sleep(2)
+
         self.driver.find_element_by_css_selector("#edit-category > div.modal-button > a.button.save").click()
         print("尼斯分类修改为第{}类".format(suiji-1))
         time.sleep(1)

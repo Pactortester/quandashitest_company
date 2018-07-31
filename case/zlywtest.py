@@ -47,7 +47,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "zljstest.png")
+        get_screenshort(self.driver, "test_zljs.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -104,7 +104,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "cpwgtest.png")
+        get_screenshort(self.driver, "test_cpwg.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -159,7 +159,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "guitest.png")
+        get_screenshort(self.driver, "test_gui.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -214,7 +214,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "syxxjctest.png")
+        get_screenshort(self.driver, "test_syxxjc.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -269,7 +269,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "syxxzltest.png")
+        get_screenshort(self.driver, "test_syxxzl.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -324,7 +324,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "zlbhtest.png")
+        get_screenshort(self.driver, "test_zlbh.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -379,7 +379,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "zlxgtest.png")
+        get_screenshort(self.driver, "test_zlxg.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -434,7 +434,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "zldbtest.png")
+        get_screenshort(self.driver, "test_zldb.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -489,7 +489,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "nfjntest.png")
+        get_screenshort(self.driver, "test_nfjn.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -545,7 +545,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "zlbgtest.png")
+        get_screenshort(self.driver, "test_zlbg.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):

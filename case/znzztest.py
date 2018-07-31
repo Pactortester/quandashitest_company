@@ -111,7 +111,9 @@ class znzztest(mytestcase):
             "132132@qq.com")
         self.driver.find_element_by_xpath(
             "/html/body/div[6]/div[3]/div[2]/div[1]/table[2]/tbody[1]/tr[4]/td[2]/input").send_keys("03515978787")
-        time.sleep(5)
+        time.sleep(2)
+        #解决常用申请人弹框，点击空白处
+        self.driver.find_element_by_xpath("/html/body/div[6]/div[3]/div[2]/h2").click()
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.section-btns.clearfix > a:nth-child(2)").click()
@@ -124,7 +126,7 @@ class znzztest(mytestcase):
             "html body div.smartRegister-page div.orderinfo-wrap div.order-content textarea").send_keys(
             time.strftime("%Y-%m-%d_%H-%M-%S") + "测试订单")
 
-        get_screenshort(self.driver, "znzztest.png")
+        get_screenshort(self.driver, "test_znzz.png")
 
         for i in self.driver.find_elements_by_css_selector("body > div.smartRegister-page > div.orderinfo-wrap > div.last-pay.personal-last-pay > ul > li.row-sense > em > i"):
 

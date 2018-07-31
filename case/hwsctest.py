@@ -47,7 +47,7 @@ class sbzrtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "sbcstest.png")
+        get_screenshort(self.driver, "test_mdl.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -102,7 +102,7 @@ class sbzrtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "sbcstest.png")
+        get_screenshort(self.driver, "test_mg.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -157,7 +157,7 @@ class sbzrtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "sbcstest.png")
+        get_screenshort(self.driver, "test_om.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -212,7 +212,7 @@ class sbzrtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "sbcstest.png")
+        get_screenshort(self.driver, "test_rb.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -235,7 +235,7 @@ class sbzrtest(mytestcase):
 
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
-    def test_rb(self):
+    def test_yd(self):
         """印度商标注册测试"""
 
         dl = dengLuPage(self.driver)
@@ -267,7 +267,7 @@ class sbzrtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "sbcstest.png")
+        get_screenshort(self.driver, "test_yd.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -322,7 +322,7 @@ class sbzrtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "sbcstest.png")
+        get_screenshort(self.driver, "test_xg.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):

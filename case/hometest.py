@@ -92,6 +92,8 @@ class hometest(mytestcase):
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div.order-detail-page > div:nth-child(8) > div > h2 > a").click()
         self.driver.find_element_by_css_selector("#change-contact-info > div.section-base > table > tbody.tbody-qiye > tr:nth-child(1) > td.td-content > input").clear()
         self.driver.find_element_by_css_selector("#change-contact-info > div.section-base > table > tbody.tbody-qiye > tr:nth-child(1) > td.td-content > input").send_keys("大西瓜")
+        self.driver.find_element_by_name("ftelephone").clear()
+        self.driver.find_element_by_name("ftelephone").send_keys("0351-5925212")
         self.driver.find_element_by_css_selector("#change-contact-info > div.modal-button > a.button.save").click()
         print("订单联系人修改成功")
         time.sleep(1)

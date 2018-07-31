@@ -109,7 +109,7 @@ class hwgstest(mytestcase):
 
 
 
-        get_screenshort(self.driver, "hwgstest.png")
+        get_screenshort(self.driver, "test_hwgs.png")
         for i in self.driver.find_elements_by_css_selector("body > div.smartRegister-page > div.orderinfo-wrap > div.last-pay.personal-last-pay > ul > li.row-sense > em > i"):
             print("总价:"+i.text)
             ii=i.text

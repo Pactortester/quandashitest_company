@@ -49,7 +49,7 @@ class dbwytest(mytestcase):
             "4564564@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "dbwytest.png")
+        get_screenshort(self.driver, "test_dbwy.png")
 
         for i in self.driver.find_elements_by_css_selector("body > div.myOrder-wrap > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
             print("总价:"+i.text)
