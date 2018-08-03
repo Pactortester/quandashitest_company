@@ -3,8 +3,9 @@ from http.cookiejar import Cookie
 
 
 class dengLuPage:
+    #url = "https://www.quandashi.com/"
     url = "https://pre-www.quandashi.com/"
-
+    #url = "http://wwwtest-v1.quandashi.cn/"
 
     def __init__(self, driver):
         self.driver = driver
@@ -16,7 +17,9 @@ class dengLuPage:
         self.open_page()
 
         self.driver.add_cookie({'name': 'QDS_COOKIE',
-              'value': '035cc1479d4441604e565dc30d9234a21309a98b', #一周有效期      mfsbtest.py
+             #'value': '379e9613f3767a728fccbdd09cd4ae25575abb15', #线上
+             'value': '1ca3d9657bac27e6393f41b07c733ec99964fcb1',  #pre
+             #'value': '72a184d1769150dc82e4649a2172b94d39f76e46',  #测试
               'Domain': '.quandashi.com'})
 
         self.driver.refresh()

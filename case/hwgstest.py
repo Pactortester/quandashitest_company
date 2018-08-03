@@ -107,6 +107,11 @@ class hwgstest(mytestcase):
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-btns.clearfix > a:nth-child(2)").click()
 
+        """订单备注"""
+        self.driver.find_element_by_css_selector(
+            "html body div.smartRegister-page div.orderinfo-wrap div.order-content textarea").send_keys(
+            time.strftime("%Y-%m-%d_%H-%M-%S") + "测试订单")
+
 
 
         get_screenshort(self.driver, "test_hwgs.png")

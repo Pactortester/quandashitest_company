@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://G:/python_spider/.idea/python_spider.iml" filepath="G:/python_spider/.idea/python_spider.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/quandashitest.iml" filepath="$PROJECT_DIR$/.idea/quandashitest.iml" />
     </modules>
   </component>
