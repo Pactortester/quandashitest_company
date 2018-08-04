@@ -35,7 +35,7 @@ class gnsbtest(mytestcase):
         print(self.driver.title)
 
         self.driver.add_cookie({'name': 'QDS_COOKIE',
-                                'value': '1ca3d9657bac27e6393f41b07c733ec99964fcb1',  # 一周有效期  2018-7-9_10-46
+                                'value': 'eeb4a8bdb397dc825880880119854c241b2b7679',  # 一周有效期  2018-7-9_10-46
                                 'Domain': '.quandashi.com'})
 
         self.driver.refresh()
