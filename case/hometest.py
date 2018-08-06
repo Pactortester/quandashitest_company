@@ -24,7 +24,7 @@ class hometest(mytestcase):
         dl.dengLu()
         time.sleep(1)
 
-        self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("#page-header > div.item-right > ul > li:nth-child(1) > a").click()
         time.sleep(1)
 
 
@@ -117,7 +117,7 @@ class hometest(mytestcase):
         dl.dengLu()
         time.sleep(1)
 
-        self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("#page-header > div.item-right > ul > li:nth-child(1) > a").click()
         time.sleep(1)
 
 
@@ -160,7 +160,7 @@ class hometest(mytestcase):
         dl.dengLu()
         time.sleep(1)
 
-        self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("#page-header > div.item-right > ul > li:nth-child(1) > a").click()
         time.sleep(1)
 
 
@@ -212,7 +212,7 @@ class hometest(mytestcase):
         dl.dengLu()
         time.sleep(1)
 
-        self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("#page-header > div.item-right > ul > li:nth-child(1) > a").click()
         time.sleep(1)
 
 

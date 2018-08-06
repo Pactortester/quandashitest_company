@@ -24,7 +24,7 @@ class dbwytest(mytestcase):
         # self.driver.find_element()
         dl.dengLu()
         time.sleep(2)
-        self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("body > div.section-banner > div.public-navbar > div > ul > li:nth-child(1) > a").click()
         time.sleep(1)
         self.assertIn("商标注册-权大师", self.driver.title)
         print(self.driver.title)

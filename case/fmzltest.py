@@ -4,6 +4,8 @@ import time
 
 import logging
 
+from selenium.webdriver import ActionChains
+
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
 from utils.screenshort import get_screenshort
@@ -21,7 +23,16 @@ class fmzltest(mytestcase):
         dl = dengLuPage(self.driver)
         dl.dengLu()
         time.sleep(2)
-        self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(2) > a").click()
+
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(2) > dd > a:nth-child(1)").click()
+
+        time.sleep(2)
         self.assertIn("发明专利申请基础型_权大师",self.driver.title)
         print(self.driver.title)
         self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]").click()  #单个申请人减缓
@@ -74,7 +85,16 @@ class fmzltest(mytestcase):
         dl = dengLuPage(self.driver)
         dl.dengLu()
         time.sleep(2)
-        self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(2) > a").click()
+
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(2) > dd > a:nth-child(2)").click()
+        time.sleep(2)
+
         self.assertIn("发明专利申请基础型_权大师",self.driver.title)
         print(self.driver.title)
         #self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
@@ -127,7 +147,16 @@ class fmzltest(mytestcase):
         dl = dengLuPage(self.driver)
         dl.dengLu()
         time.sleep(2)
-        self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(2) > a").click()
+
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(2) > dd > a:nth-child(3)").click()
+        time.sleep(2)
+
         self.assertIn("发明专利申请基础型_权大师",self.driver.title)
         print(self.driver.title)
         #self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓

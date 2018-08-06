@@ -22,10 +22,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(1) > dd > a").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(1) > dd > a").click()
 
         time.sleep(3)
 
@@ -79,10 +81,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
 
         time.sleep(3)
 
@@ -134,11 +138,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
-
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
         time.sleep(3)
 
         # 获取打开的多个窗口句柄
@@ -189,10 +194,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(1)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(1)").click()
 
         time.sleep(3)
 
@@ -244,10 +251,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(2)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(2)").click()
 
         time.sleep(3)
 
@@ -299,11 +308,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(5) > dd > a:nth-child(1)").click()
-
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(5) > dd > a:nth-child(1)").click()
         time.sleep(3)
 
         # 获取打开的多个窗口句柄
@@ -354,10 +364,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(5) > dd > a:nth-child(2)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(5) > dd > a:nth-child(2)").click()
 
         time.sleep(3)
 
@@ -409,11 +421,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(5) > dd > a:nth-child(3)").click()
-
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(5) > dd > a:nth-child(3)").click()
         time.sleep(3)
 
         # 获取打开的多个窗口句柄
@@ -464,10 +477,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(6) > dd > a:nth-child(1)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(6) > dd > a:nth-child(1)").click()
 
         time.sleep(3)
 
@@ -519,11 +534,12 @@ class zlywtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(6) > dd > a:nth-child(2)").click()
-
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(6) > dd > a:nth-child(2)").click()
 
         time.sleep(3)
 

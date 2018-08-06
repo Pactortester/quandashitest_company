@@ -18,9 +18,8 @@ class hhrtest(mytestcase):
         dl.dengLu()
         time.sleep(1)
 
-        self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("#page-header > div.item-right > ul > li:nth-child(2) > a").click()
         time.sleep(1)
-        self.driver.find_element_by_css_selector("#personalCenter2-header > div.header-box > div.header-box > div.header-nav > a").click()
 
         #新版提示
         self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div[1]/div/a").click()
@@ -117,9 +116,8 @@ class hhrtest(mytestcase):
         dl.dengLu()
         time.sleep(1)
 
-        self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("#page-header > div.item-right > ul > li:nth-child(2) > a").click()
         time.sleep(1)
-        self.driver.find_element_by_css_selector("#personalCenter2-header > div.header-box > div.header-box > div.header-nav > a").click()
         #新版提示
         self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div[1]/div/a").click()
         self.driver.find_element_by_css_selector("#personalCenter2-leftNav > ul > li:nth-child(2) > ul > li:nth-child(1) > a").click()
@@ -214,9 +212,8 @@ class hhrtest(mytestcase):
         dl.dengLu()
         time.sleep(1)
 
-        self.driver.find_element_by_css_selector("#com-header > div > div.item-right > ul.r-maps > li:nth-child(1) > a").click()
+        self.driver.find_element_by_css_selector("#page-header > div.item-right > ul > li:nth-child(2) > a").click()
         time.sleep(1)
-        self.driver.find_element_by_css_selector("#personalCenter2-header > div.header-box > div.header-box > div.header-nav > a").click()
         #新版提示
         self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div[1]/div/a").click()
         self.driver.find_element_by_css_selector("#personalCenter2-leftNav > ul > li:nth-child(2) > ul > li:nth-child(2) > a").click()
