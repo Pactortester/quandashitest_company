@@ -18,7 +18,7 @@ class dengLuPage:
 
         self.driver.add_cookie({'name': 'QDS_COOKIE',
              #'value': '379e9613f3767a728fccbdd09cd4ae25575abb15', #线上
-             'value': 'eeb4a8bdb397dc825880880119854c241b2b7679',  #pre
+             'value': 'ab63c857c28ff94e241a578ecd1994ac520eece6',  #pre
              #'value': '72a184d1769150dc82e4649a2172b94d39f76e46',  #测试
               'Domain': '.quandashi.com'})
 
