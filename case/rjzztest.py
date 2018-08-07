@@ -27,6 +27,7 @@ class rjzztest(mytestcase):
 
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(3) > h3 > a")).perform()
         ActionChains(self.driver).release()
@@ -87,6 +88,7 @@ class rjzztest(mytestcase):
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(3) > h3 > a")).perform()
         ActionChains(self.driver).release()
@@ -94,7 +96,7 @@ class rjzztest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(3) > div > dl:nth-child(1) > dd > a:nth-child(2)").click()
         time.sleep(2)
 
-        self.assertIn("软件著作权登记-权大师", self.driver.title)
+        self.assertIn("软件著作权登记加急-权大师", self.driver.title)
         print(self.driver.title)
         self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()
 

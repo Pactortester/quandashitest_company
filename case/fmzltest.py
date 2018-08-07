@@ -26,6 +26,7 @@ class fmzltest(mytestcase):
 
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
@@ -77,7 +78,7 @@ class fmzltest(mytestcase):
 
 
     def test_fmzl_2(self):
-        """基础型-多个申请人减缓"""
+        """防御型-多个申请人减缓"""
 
         # logging.basicConfig(filename='../LOG/' + __name__ + '.log',
         #                     format='[%(asctime)s-%(filename)s-%(levelname)s: %(message)s]', level=logging.DEBUG,
@@ -88,6 +89,7 @@ class fmzltest(mytestcase):
 
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
@@ -95,7 +97,7 @@ class fmzltest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(2) > dd > a:nth-child(2)").click()
         time.sleep(2)
 
-        self.assertIn("发明专利申请基础型_权大师",self.driver.title)
+        self.assertIn("发明专利申请防御型_权大师",self.driver.title)
         print(self.driver.title)
         #self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2) > input[type=\"checkbox\"]").click()  #多个申请人减缓
@@ -139,7 +141,7 @@ class fmzltest(mytestcase):
 
 
     def test_fmzl_3(self):
-        """基础型-不减缓"""
+        """壁垒型-不减缓"""
 
         # logging.basicConfig(filename='../LOG/' + __name__ + '.log',
         #                     format='[%(asctime)s-%(filename)s-%(levelname)s: %(message)s]', level=logging.DEBUG,
@@ -150,6 +152,7 @@ class fmzltest(mytestcase):
 
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
@@ -157,7 +160,7 @@ class fmzltest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(2) > dd > a:nth-child(3)").click()
         time.sleep(2)
 
-        self.assertIn("发明专利申请基础型_权大师",self.driver.title)
+        self.assertIn("发明专利申请_壁垒型",self.driver.title)
         print(self.driver.title)
         #self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
         #self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2) > input[type=\"checkbox\"]")  #多个申请人减缓
