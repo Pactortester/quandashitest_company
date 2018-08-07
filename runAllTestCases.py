@@ -50,7 +50,7 @@ def send_mail(path):
     mail_body = MIMEText(msg, _subtype='html', _charset="utf-8")
     now = time.strftime("%Y-%m-%d_%H-%M-%S")
     # 多功能，internet，mail，扩展，文本ll
-    mail_body["Subject"] = "权大师测试报告"+ now
+    mail_body["Subject"] = "权大师PRE测试报告"+ now
     mail_body["from"] = "lijiawei@quandashi.com"
     mail_body["to"] = "lijiawei@quandashi.com"
 
@@ -69,5 +69,5 @@ if __name__ == "__main__":
     now = time.strftime("%Y-%m-%d_%H-%M-%S")
     path = path + "/report/" + now + "_report.html"
     with open(path, 'wb') as file:
-        HTMLTestRunner(stream=file, verbosity=1, title="权大师测试报告", description="Environment:  OS:win10  Browser:chrome").run(suite)
+        HTMLTestRunner(stream=file, verbosity=1, title="权大师PRE测试报告", description="Environment:  OS:win10  Browser:chrome").run(suite)
     send_mail(path)
