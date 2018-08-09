@@ -28,7 +28,7 @@ class fmzltest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+            "body > div.section-banner > div.public-navbar >  div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(2) > dd > a:nth-child(1)").click()
