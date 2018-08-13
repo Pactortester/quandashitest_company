@@ -160,7 +160,7 @@ class fmzltest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(2) > dd > a:nth-child(3)").click()
         time.sleep(2)
 
-        self.assertIn("发明专利申请_壁垒型",self.driver.title)
+        self.assertIn("发明专利申请壁垒型_权大师",self.driver.title)
         print(self.driver.title)
         #self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
         #self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2) > input[type=\"checkbox\"]")  #多个申请人减缓
