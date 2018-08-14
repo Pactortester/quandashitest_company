@@ -2,6 +2,7 @@
 # coding=utf-8
 
 import time
+from utils.random import Unicode
 
 import logging
 
@@ -40,12 +41,23 @@ class gnsbtest(mytestcase):
         #
         # self.driver.refresh()
 
-        self.driver.find_element_by_css_selector("#qds-searchkey").send_keys("测试")
+        #self.driver.find_element_by_css_selector("#qds-searchkey").send_keys("测试")
         self.driver.find_element_by_css_selector("#serch-word").click()
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("注册商标查询_中国商标查询_权大师官网", self.driver.title)
+        print(self.driver.title)
+        dl.refresh()
+        ss=Unicode()
+        print("搜索商标名称："+ss)
+        self.driver.find_element_by_css_selector("body > div.brandSearch2-page > div > div.search > div.searchPanel.clearfix > input.input.search-text").send_keys("{}".format(ss))
+        self.driver.find_element_by_css_selector("#btnSearchkey").click()
 
         time.sleep(4)
 
-        self.assertIn("测试_全球更好用的商标搜索_权大师",self.driver.title)
+
 
         print(self.driver.title)
 
