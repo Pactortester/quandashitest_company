@@ -190,6 +190,7 @@ class zlywtest(mytestcase):
 
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
+
     def test_syzlbz_1(self):
         """标准型-单个申请人减缓"""
 
@@ -210,10 +211,9 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(1)").click()
 
         time.sleep(2)
-        self.assertIn("商标购买页面_权大师", self.driver.title)
+        self.assertIn("实用新型专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
-        self.driver.find_element_by_css_selector(
-            "#slowItems > label.label.active > input[type=\"checkbox\"]").click()  # 单个申请人减缓
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2) > input[type=\"checkbox\"]")  #多个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3) > input[type=\"checkbox\"]")  #不减缓
 
@@ -273,11 +273,10 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(1)").click()
         time.sleep(2)
 
-        self.assertIn("商标购买页面_权大师", self.driver.title)
+        self.assertIn("实用新型专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
         # self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
-        self.driver.find_element_by_css_selector(
-            "#slowItems > label:nth-child(2) > input[type=\"checkbox\"]").click()  # 多个申请人减缓
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3) > input[type=\"checkbox\"]")  #不减缓
 
         self.driver.find_element_by_css_selector("#serviceName > li.list.active").click()
@@ -293,7 +292,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "test_fmzl_2.png")
+        get_screenshort(self.driver, "test_syzlbz_2.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -336,12 +335,11 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(1)").click()
         time.sleep(2)
 
-        self.assertIn("商标购买页面_权大师", self.driver.title)
+        self.assertIn("实用新型专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
         # self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2) > input[type=\"checkbox\"]")  #多个申请人减缓
-        self.driver.find_element_by_css_selector(
-            "#slowItems > label:nth-child(3) > input[type=\"checkbox\"]").click()  # 不减缓
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
 
         self.driver.find_element_by_css_selector("#serviceName > li.list.active").click()
 
@@ -399,10 +397,9 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(2)").click()
 
         time.sleep(2)
-        self.assertIn("商标购买页面_权大师", self.driver.title)
+        self.assertIn("实用新型专利担保申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
-        self.driver.find_element_by_css_selector(
-            "#slowItems > label.label.active > input[type=\"checkbox\"]").click()  # 单个申请人减缓
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2) > input[type=\"checkbox\"]")  #多个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3) > input[type=\"checkbox\"]")  #不减缓
 
@@ -462,11 +459,10 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(2)").click()
         time.sleep(2)
 
-        self.assertIn("商标购买页面_权大师", self.driver.title)
+        self.assertIn("实用新型专利担保申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
         # self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
-        self.driver.find_element_by_css_selector(
-            "#slowItems > label:nth-child(2) > input[type=\"checkbox\"]").click()  # 多个申请人减缓
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3) > input[type=\"checkbox\"]")  #不减缓
 
         self.driver.find_element_by_css_selector("#serviceName > li.list.active").click()
@@ -525,12 +521,11 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(4) > dd > a:nth-child(2)").click()
         time.sleep(2)
 
-        self.assertIn("商标购买页面_权大师", self.driver.title)
+        self.assertIn("实用新型专利担保申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
         # self.driver.find_element_by_css_selector("#slowItems > label.label.active > input[type=\"checkbox\"]")  #单个申请人减缓
         # self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2) > input[type=\"checkbox\"]")  #多个申请人减缓
-        self.driver.find_element_by_css_selector(
-            "#slowItems > label:nth-child(3) > input[type=\"checkbox\"]").click()  # 不减缓
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
 
         self.driver.find_element_by_css_selector("#serviceName > li.list.active").click()
 
