@@ -1,11 +1,11 @@
 
 class dengLuPage:
     #url = "https://www.quandashi.com/"
-    url = "https://pre-www.quandashi.com/"
+    url = "https://www.quandashi.com/"
 
 
     cookie=({'name': 'QDS_COOKIE',
-             'value': '59d10186e2416ad0df8dd299085ed51d1c1c7753',
+             'value': '116b79bb072221f47477b4c5980a685f0b4fa2d1',
               'Domain': '.quandashi.com'})
 
     def __init__(self, driver):
