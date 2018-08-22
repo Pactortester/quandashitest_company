@@ -1,12 +1,7 @@
-#
-# coding=utf-8
 
 import time
 from utils.random import Unicode
 
-import logging
-
-from selenium.webdriver import ActionChains
 
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
@@ -64,4 +59,6 @@ class gnsbtest(mytestcase):
         get_screenshort(self.driver, "test_sbss.png")
 
         print("商标搜索测试通过")
+
+
 

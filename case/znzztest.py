@@ -47,14 +47,11 @@ class znzztest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(14) > div.categoryInfo-wrap > div.c-row.row-way > div > a.btn-choice.active").click()
-        # suiji11 = random.randint(2, 12)
-        # suiji12 = random.randint(13, 24)
-        # suiji13 = random.randint(25, 36)
-        # suiji14 = random.randint(37, 46)
 
+        suiji = random.randint(2, 46)
 
         self.driver.find_element_by_css_selector(
-            "#section-selfchoice > div.group-left > ul > li:nth-child(2) > span").click()
+            "#section-selfchoice > div.group-left > ul > li:nth-child({}) > span".format(suiji)).click()
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > span").click()
 
@@ -79,7 +76,7 @@ class znzztest(mytestcase):
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > dl > dt:nth-child(10) > span").click()
 
-        print("选择了第2类商标分类!")
+        print("选择了第{}类商标分类!".format(suiji))
 
 
         self.driver.find_element_by_css_selector(
@@ -93,7 +90,7 @@ class znzztest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.applicant-form > table.table-1.table-applicant.table-type1.active > tbody.tbody-qiye > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").send_keys(
-            "人大才")
+            "人{}才".format(suiji))
         self.driver.find_element_by_css_selector("#ssq").click()
         self.driver.find_element_by_css_selector(
             "#companylistrative > div > div.d-dropdown > div.tab-content.active.tab-province > dl.item.item-a-g.clearfix > dd > span:nth-child(1)").click()
@@ -188,14 +185,11 @@ class znzztest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(14) > div.categoryInfo-wrap > div.c-row.row-way > div > a.btn-choice.active").click()
-        # suiji11 = random.randint(2, 12)
-        # suiji12 = random.randint(13, 24)
-        # suiji13 = random.randint(25, 36)
-        # suiji14 = random.randint(37, 46)
 
+        suiji = random.randint(2, 46)
 
         self.driver.find_element_by_css_selector(
-            "#section-selfchoice > div.group-left > ul > li:nth-child(2) > span").click()
+            "#section-selfchoice > div.group-left > ul > li:nth-child({}) > span".format(suiji)).click()
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > span").click()
 
@@ -235,7 +229,7 @@ class znzztest(mytestcase):
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table.table-1.table-applicant.table-type1.active > tbody.tbody-gsh > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").clear()
 
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table.table-1.table-applicant.table-type1.active > tbody.tbody-gsh > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").send_keys(
-            "人大才")
+            "人{}才".format(suiji))
         self.driver.find_element_by_css_selector("#geren-idCard").send_keys("140121198906133513")
         time.sleep(1)
         self.driver.find_element_by_css_selector("#personalssq").click()

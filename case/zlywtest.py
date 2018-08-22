@@ -74,9 +74,10 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
         # com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)
+        
 
-    def test_cpwg(self):
-        """产品外观设计测试"""
+    def test_cpwgbz_1(self):
+        """产品外观标准_单个申请人减缓测试"""
 
         dl = dengLuPage(self.driver)
         dl.dengLu()
@@ -96,8 +97,12 @@ class zlywtest(mytestcase):
         windows = self.driver.window_handles
         # 切换到当前最新打开的窗口
         self.driver.switch_to.window(windows[-1])
-        self.assertIn("产品外观设计专利_权大师",self.driver.title)
+        self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li.list.active").click() # 标准
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:"+a.text)
@@ -110,7 +115,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "test_cpwg.png")
+        get_screenshort(self.driver, "test_cpwgbz_1.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
@@ -133,8 +138,320 @@ class zlywtest(mytestcase):
 
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
-    def test_gui(self):
-        """GUI外观设计测试"""
+    def test_cpwgbz_2(self):
+        """产品外观标准_多个申请人减缓测试"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li.list.active").click()  # 标准
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:" + a.text)
+            aa = a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_cpwgbz_2.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_cpwgbz_3(self):
+        """产品外观标准_不减缓测试"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li.list.active").click()  # 标准
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:" + a.text)
+            aa = a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_cpwgbz_3.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_cpwgdb_1(self):
+        """产品外观担保_单个申请人减缓测试"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:" + a.text)
+            aa = a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_cpwgdb_1.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_cpwgdb_2(self):
+        """产品外观担保_多个申请人减缓测试"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:" + a.text)
+            aa = a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_cpwgdb_2.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_cpwgbz_3(self):
+        """产品外观担保_不减缓测试"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:" + a.text)
+            aa = a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_cpwgdb_3.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+
+
+    def test_guibz_1(self):
+        """GUI标准_单个申请人减缓"""
 
         dl = dengLuPage(self.driver)
         dl.dengLu()
@@ -153,8 +470,12 @@ class zlywtest(mytestcase):
         windows = self.driver.window_handles
         # 切换到当前最新打开的窗口
         self.driver.switch_to.window(windows[-1])
-        self.assertIn("GUI外观设计专利_权大师",self.driver.title)
+        self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li.list.active").click() # 标准
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:"+a.text)
@@ -167,7 +488,312 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
         self.driver.find_element_by_css_selector("#remark").send_keys("test")
 
-        get_screenshort(self.driver, "test_gui.png")
+        get_screenshort(self.driver, "test_guibz_1.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_guibz_2(self):
+        """GUI标准_多个申请人减缓"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li.list.active").click() # 标准
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:"+a.text)
+            aa=a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_guibz_2.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_guibz_3(self):
+        """GUI标准_不减缓"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li.list.active").click() # 标准
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:"+a.text)
+            aa=a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_guibz_3.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_guidb_1(self):
+        """GUI担保_单个申请人减缓"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click() # 担保
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:"+a.text)
+            aa=a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_guibz_1.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_guidb_2(self):
+        """GUI担保_多个申请人减缓"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click() # 担保
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:"+a.text)
+            aa=a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_guibz_2.png")
+
+        for i in self.driver.find_elements_by_css_selector(
+                "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):
+            print("总价:" + i.text)
+            ii = i.text
+
+        self.assertIn(aa, ii)
+        print("价格一致")
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-myorder.width1200 > div > div > ul > li.row-step > a.btn-next.submitOrder").click()
+
+        for o in self.driver.find_elements_by_class_name("payable"):
+            print("订单提交成功，应付金额:" + o.text)
+            oo = o.text
+
+        self.assertIn(oo, ii)
+
+        print("测试通过")
+
+        self.driver.find_element_by_css_selector("#alisubmit").click()
+
+    def test_guidb_3(self):
+        """GUI担保_不减缓"""
+
+        dl = dengLuPage(self.driver)
+        dl.dengLu()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+        time.sleep(3)
+
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
+        print(self.driver.title)
+
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
+
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click() # 担保
+
+        for a in self.driver.find_elements_by_css_selector("#total-price"):
+            print("费用总计:"+a.text)
+            aa=a.text
+
+        self.driver.find_element_by_css_selector(
+            "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
+        self.driver.find_element_by_name("ownerContactPerson").send_keys("全大师")
+        self.driver.find_element_by_name("ownerContactPhone").send_keys("15624992498")
+        self.driver.find_element_by_name("contactMail").send_keys("145647@qq.com")
+        self.driver.find_element_by_css_selector("#remark").send_keys("test")
+
+        get_screenshort(self.driver, "test_guibz_3.png")
 
         for i in self.driver.find_elements_by_css_selector(
                 "body > div.section-myorder.width1200 > div > div > ul > li.row-sense > em > i"):

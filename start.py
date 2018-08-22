@@ -1,3 +1,6 @@
+import random
+import re
+
 from selenium import webdriver
 
 # import re
@@ -280,4 +283,16 @@ from selenium import webdriver
 
 
 
-print("hello world")
+# import re
+# string = "127米"
+# #print (re.findall(r"\d+\.?\d*", string))
+#
+# aa=re.findall(r"\d+\.?\d*", string)
+# print(aa)
+# totalCount = '已为您检索到19条近似商标'
+#
+# totalCount = re.sub("\D","",totalCount)
+#
+# print(totalCount)
+
+print("包针雨我爱你！")
