@@ -147,7 +147,7 @@ class sbnumtest(mytestcase):
         self.driver.find_element_by_css_selector("body > div.smartRegister-page.smartRegister3-page > div:nth-child(14) > div.categoryInfo-wrap > div.c-row.row-industry1 > div > select.myInput.znsecond > option:nth-child(2)").click()
         fenlei2=self.driver.find_element_by_css_selector("body > div.smartRegister-page.smartRegister3-page > div:nth-child(14) > div.categoryInfo-wrap > div.c-row.row-industry1 > div > select.myInput.znsecond > option:nth-child(2)").text
 
-        print("选择所在领域："+fenlei1+fenlei2)
+        print("选择所在领域："+fenlei1+"_"+fenlei2)
 
         zf = self.driver.find_element_by_css_selector(
             "#section-recommend > div.section-bodyer > div:nth-child(1) > h4 > div.header-left > a:nth-child(2) > span").text

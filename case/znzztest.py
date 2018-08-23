@@ -6,6 +6,7 @@ import logging
 
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
+from utils.random import Unicode
 from utils.screenshort import get_screenshort
 
 
@@ -39,7 +40,7 @@ class znzztest(mytestcase):
             "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-name > td.td-content > input").send_keys(
-            "test")
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-tuyang.show-create.show-create1 > td.td-content > div.zidongdong-create > ul > li > div.bottom.getBrandPic > a").click()
         self.driver.find_element_by_css_selector("#create-tuyang > label.label.checked").click()
@@ -90,7 +91,7 @@ class znzztest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.applicant-form > table.table-1.table-applicant.table-type1.active > tbody.tbody-qiye > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").send_keys(
-            "人{}才".format(suiji))
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector("#ssq").click()
         self.driver.find_element_by_css_selector(
             "#companylistrative > div > div.d-dropdown > div.tab-content.active.tab-province > dl.item.item-a-g.clearfix > dd > span:nth-child(1)").click()
@@ -104,7 +105,7 @@ class znzztest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.applicant-form > table:nth-child(13) > tbody.tbody-qiye > tr:nth-child(1) > td.td-content > input").send_keys(
-            "一擦")
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.applicant-form > table:nth-child(13) > tbody.tbody-qiye > tr:nth-child(2) > td.td-content > input").send_keys(
             "15624992489")
@@ -177,7 +178,7 @@ class znzztest(mytestcase):
             "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-name > td.td-content > input").send_keys(
-            "test")
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-tuyang.show-create.show-create1 > td.td-content > div.zidongdong-create > ul > li > div.bottom.getBrandPic > a").click()
         self.driver.find_element_by_css_selector("#create-tuyang > label.label.checked").click()

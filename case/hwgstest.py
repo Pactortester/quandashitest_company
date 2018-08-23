@@ -1,11 +1,12 @@
 # coding=utf-8
-
+import random
 import time
 
 import logging
 
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
+from utils.random import Unicode
 from utils.screenshort import get_screenshort
 
 
@@ -38,7 +39,7 @@ class hwgstest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-name > td.td-content > input").send_keys(
-            "test")
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-tuyang.show-create.show-create1 > td.td-content > div.zidongdong-create > ul > li > div.bottom.getBrandPic > a").click()
         self.driver.find_element_by_css_selector("#create-tuyang > label.label.checked").click()
@@ -46,8 +47,9 @@ class hwgstest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(14) > div.categoryInfo-wrap > div.c-row.row-way > div > a.btn-choice.active").click()
+        suiji=random.randint(2,46)
         self.driver.find_element_by_css_selector(
-            "#section-selfchoice > div.group-left > ul > li:nth-child(1) > span").click()
+            "#section-selfchoice > div.group-left > ul > li:nth-child({}) > span".format(suiji)).click()
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > span").click()
         self.driver.find_element_by_css_selector(
@@ -70,7 +72,7 @@ class hwgstest(mytestcase):
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > dl > dt:nth-child(9) > span").click()
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > dl > dt:nth-child(10) > span").click()
-
+        print("选择了第{}类商标分类！".format(suiji))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div.last-pay > ul > li.row-step > a").click()
 
@@ -80,7 +82,7 @@ class hwgstest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base > div.overseas-form > table.table-1.table-overseas.table-type2.active > tbody.tbody-qiye > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").send_keys(
-            "拳打死")
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base > div.overseas-form > table.table-1.table-overseas.table-type2.active > tbody.tbody-qiye > tr:nth-child(2) > td.td-content > input").send_keys(
             "tesr")
@@ -169,8 +171,9 @@ class hwgstest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(14) > div.categoryInfo-wrap > div.c-row.row-way > div > a.btn-choice.active").click()
+        suiji=random.randint(2,46)
         self.driver.find_element_by_css_selector(
-            "#section-selfchoice > div.group-left > ul > li:nth-child(1) > span").click()
+            "#section-selfchoice > div.group-left > ul > li:nth-child({}) > span".format(suiji)).click()
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > span").click()
         time.sleep(1)
@@ -194,7 +197,7 @@ class hwgstest(mytestcase):
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > dl > dt:nth-child(9) > span").click()
         self.driver.find_element_by_css_selector(
             "#section-selfchoice > div.group-left > ul > li.list.open > div:nth-child(2) > dl > dt:nth-child(10) > span").click()
-
+        print("选择了第{}类商标分类！".format(suiji))
 
 
         self.driver.find_element_by_css_selector(
@@ -205,7 +208,7 @@ class hwgstest(mytestcase):
         # 企业 自然人
 
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base > table > thead > tr:nth-child(1) > td.td-content > a:nth-child(2)").click()
-        self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base.open > div.overseas-form > table.table-1.table-overseas.table-type2.active > tbody.tbody-gsh > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").send_keys("刘大哥")
+        self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base.open > div.overseas-form > table.table-1.table-overseas.table-type2.active > tbody.tbody-gsh > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").send_keys("{}".format(Unicode()))
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base.open > div.overseas-form > table.table-1.table-overseas.table-type2.active > tbody.tbody-gsh > tr:nth-child(2) > td.td-content > input").send_keys("dalao")
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base.open > div.overseas-form > table.table-1.table-overseas.table-type2.active > tbody.tbody-gsh > tr:nth-child(4) > td.td-content > input").send_keys("140121199506133513")
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap.overseas > div.section-base.open > div.overseas-form > table.table-1.table-overseas.table-type2.active > tbody.tbody-gsh > tr:nth-child(5) > td.td-content.fcountry-container > input.myInput").click()

@@ -294,5 +294,8 @@ from selenium import webdriver
 # totalCount = re.sub("\D","",totalCount)
 #
 # print(totalCount)
+from utils.random import Unicode
 
 print("包针雨我爱你！")
+
+print(Unicode())

@@ -74,7 +74,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
         # com-navbar > div > div.drop-nav > div > ul > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)
-        
+
 
     def test_cpwgbz_1(self):
         """产品外观标准_单个申请人减缓测试"""
@@ -275,7 +275,7 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
 
         time.sleep(3)
 
@@ -286,9 +286,10 @@ class zlywtest(mytestcase):
         self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
 
-        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
 
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
         self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:" + a.text)
@@ -337,7 +338,7 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
 
         time.sleep(3)
 
@@ -348,8 +349,10 @@ class zlywtest(mytestcase):
         self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
 
+        time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
 
+        time.sleep(2)
         self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
@@ -399,7 +402,7 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
 
         time.sleep(3)
 
@@ -410,8 +413,9 @@ class zlywtest(mytestcase):
         self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
 
+        time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
-
+        time.sleep(2)
         self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
@@ -656,9 +660,11 @@ class zlywtest(mytestcase):
         self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
 
+        time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
+        time.sleep(2)
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
 
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click() # 担保
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:"+a.text)
@@ -717,9 +723,11 @@ class zlywtest(mytestcase):
         self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
 
+        time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
 
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click() # 担保
+        time.sleep(2)
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:"+a.text)
@@ -778,9 +786,12 @@ class zlywtest(mytestcase):
         self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
 
-        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
+        time.sleep(2)
 
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click() # 担保
+        self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
+        time.sleep(2)
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:"+a.text)
