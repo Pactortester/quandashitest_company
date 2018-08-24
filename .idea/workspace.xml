@@ -3,15 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a6bc838c-6f5c-4328-96d9-5f67ccc0000e" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/bmkstest.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/bmkstest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/case/dbwytest.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/dbwytest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/hhrtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/hhrtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/hwgstest.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/hwgstest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/sbnumtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/sbnumtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/zlywtest.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/zlywtest.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/case/znzztest.py" beforeDir="false" afterPath="$PROJECT_DIR$/case/znzztest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/2018-08-22.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/2018-08-22.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/start.py" beforeDir="false" afterPath="$PROJECT_DIR$/start.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/utils/random.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/random.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/utils/readCsvFile.py" beforeDir="false" afterPath="$PROJECT_DIR$/utils/readCsvFile.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -99,14 +99,15 @@
     <session id="522741068">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="4" />
+          <entry key="project.closed" value="5" />
           <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.10" value="1" />
+          <entry key="project.open.time.10" value="2" />
+          <entry key="project.open.time.15" value="1" />
           <entry key="project.open.time.5" value="1" />
           <entry key="project.open.time.6" value="2" />
           <entry key="project.open.time.7" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="7" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -114,7 +115,7 @@
           <entry key="Python Console" value="22" />
           <entry key="dummy" value="4" />
           <entry key="html" value="3" />
-          <entry key="py" value="3171" />
+          <entry key="py" value="3614" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
@@ -122,7 +123,7 @@
         <counts>
           <entry key="HTML" value="3" />
           <entry key="PLAIN_TEXT" value="4" />
-          <entry key="Python" value="3193" />
+          <entry key="Python" value="3636" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -130,21 +131,21 @@
         <counts>
           <entry key="bat" value="1" />
           <entry key="chinese" value="2" />
-          <entry key="html" value="30" />
+          <entry key="html" value="31" />
           <entry key="ini" value="2" />
           <entry key="log" value="8" />
           <entry key="png" value="2" />
-          <entry key="py" value="205" />
+          <entry key="py" value="218" />
           <entry key="yml" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="HTML" value="30" />
+          <entry key="HTML" value="31" />
           <entry key="Image" value="2" />
           <entry key="Log" value="6" />
           <entry key="PLAIN_TEXT" value="7" />
-          <entry key="Python" value="205" />
+          <entry key="Python" value="218" />
           <entry key="YAML" value="1" />
         </counts>
       </usages-collector>
@@ -155,75 +156,36 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/sbnumtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1360">
-              <caret line="85" column="93" lean-forward="true" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+            <state relative-caret-position="-172">
+              <caret line="136" column="49" lean-forward="true" selection-start-line="136" selection-start-column="49" selection-end-line="136" selection-end-column="49" />
               <folding>
                 <element signature="e#0#13#0" expanded="true" />
-                <marker date="1534933419917" expanded="true" signature="182:183" ph="..." />
-                <marker date="1534933419917" expanded="true" signature="182:187" ph="..." />
-                <marker date="1534933419917" expanded="true" signature="214:224" ph="..." />
-                <marker date="1534933419917" expanded="true" signature="215:220" ph="..." />
+                <marker date="1535098976824" expanded="true" signature="183:184" ph="..." />
+                <marker date="1535098976824" expanded="true" signature="183:206" ph="..." />
+                <marker date="1535098976824" expanded="true" signature="233:243" ph="..." />
+                <marker date="1535098976824" expanded="true" signature="234:239" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/chinese">
+        <entry file="file://$PROJECT_DIR$/case/yytrtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="189" column="56" lean-forward="true" selection-start-line="189" selection-start-column="56" selection-end-line="189" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/random.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-552">
-              <caret line="399" column="56" lean-forward="true" selection-start-line="399" selection-start-column="56" selection-end-line="399" selection-end-column="56" />
+            <state relative-caret-position="416">
+              <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
               <folding>
-                <element signature="e#0#13#0" expanded="true" />
-                <marker date="1535016666301" expanded="true" signature="25002:25007" ph="..." />
+                <element signature="e#302#2723#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/start.py">
+        <entry file="file://$PROJECT_DIR$/case/dbwytest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1592">
-              <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
-              <folding>
-                <element signature="e#0#13#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/readCsvFile.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="320">
-              <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
-              <folding>
-                <element signature="e#0#10#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/hhrtest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
-              <folding>
-                <element signature="e#269#7413#0" />
-                <element signature="e#7455#13917#0" />
-                <element signature="e#13959#19923#0" />
-              </folding>
+            <state relative-caret-position="128">
+              <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
             </state>
           </provider>
         </entry>
@@ -231,11 +193,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/znzztest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="242">
+              <caret line="26" column="36" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="31" />
               <folding>
-                <element signature="e#269#9368#0" />
-                <element signature="e#9406#17943#0" />
+                <element signature="e#9477#18032#0" />
               </folding>
             </state>
           </provider>
@@ -244,54 +205,101 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/hwgstest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="490">
-              <caret line="210" column="347" selection-start-line="210" selection-start-column="347" selection-end-line="210" selection-end-column="347" />
+            <state relative-caret-position="368">
+              <caret line="56" column="8" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="35" />
               <folding>
                 <element signature="e#15#28#0" expanded="true" />
+                <element signature="e#9321#19011#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/case/bmkstest.py">
+        <entry file="file://$PROJECT_DIR$/case/hhrtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="48" column="75" lean-forward="true" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+            <state relative-caret-position="36">
+              <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
+              <folding>
+                <element signature="e#304#7451#0" />
+                <element signature="e#14052#20031#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/case/hometest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-96" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/start.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="302" column="8" lean-forward="true" selection-start-line="302" selection-start-column="8" selection-end-line="302" selection-end-column="8" />
+              <folding>
+                <element signature="e#0#13#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/case/qtzltest.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="450">
+              <caret line="603" column="26" selection-start-line="603" selection-start-column="26" selection-end-line="603" selection-end-column="26" />
+              <folding>
+                <element signature="e#302#2785#0" />
+                <element signature="e#2867#5433#0" />
+                <element signature="e#2767#5197#0" />
+                <element signature="e#7995#10517#0" />
+                <element signature="e#5232#7660#0" />
+                <element signature="e#13123#15647#0" />
+                <element signature="e#15674#18103#0" />
+                <element signature="e#18249#20861#0" />
+                <element signature="e#10159#12590#0" />
+                <element signature="e#23374#25899#0" />
+                <element signature="e#25935#28459#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/case/zlywtest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="369">
-              <caret line="1042" column="89" lean-forward="true" selection-start-line="1042" selection-start-column="89" selection-end-line="1042" selection-end-column="89" />
+            <state relative-caret-position="370">
+              <caret line="1431" column="24" selection-start-line="1431" selection-start-column="24" selection-end-line="1431" selection-end-column="24" />
               <folding>
                 <element signature="e#300#2837#0" />
-                <element signature="e#2874#5312#0" />
-                <element signature="e#5572#8217#0" />
-                <element signature="e#8264#10920#0" />
-                <element signature="e#10947#13603#0" />
-                <element signature="e#13785#16573#0" />
-                <element signature="e#16618#19398#0" />
-                <element signature="e#5346#7891#0" />
-                <element signature="e#8048#10693#0" />
-                <element signature="e#10720#13366#0" />
-                <element signature="e#13398#16043#0" />
-                <element signature="e#16081#18726#0" />
-                <element signature="e#18764#21401#0" />
-                <element signature="e#7797#10828#0" />
-                <element signature="e#10894#13939#0" />
-                <element signature="e#13981#17021#0" />
-                <element signature="e#20182#23258#0" />
-                <element signature="e#23300#26372#0" />
-                <element signature="e#7764#7788#0" />
-                <element signature="e#12732#15160#0" />
-                <element signature="e#15195#17625#0" />
-                <element signature="e#17660#20088#0" />
-                <element signature="e#20123#22552#0" />
-                <element signature="e#22587#25018#0" />
+                <element signature="e#2877#5527#0" />
+                <element signature="e#5566#8222#0" />
+                <element signature="e#8261#10909#0" />
+                <element signature="e#10948#13606#0" />
+                <element signature="e#13645#16346#0" />
+                <element signature="e#16385#19077#0" />
+                <element signature="e#19117#21764#0" />
+                <element signature="e#21802#24449#0" />
+                <element signature="e#24487#27126#0" />
+                <element signature="e#27164#29857#0" />
+                <element signature="e#29895#32588#0" />
+                <element signature="e#32626#35312#0" />
+                <element signature="e#35352#38359#0" />
+                <element signature="e#38398#41404#0" />
+                <element signature="e#41443#44445#0" />
+                <element signature="e#44484#47491#0" />
+                <element signature="e#47530#50536#0" />
+                <element signature="e#50575#53576#0" />
+                <element signature="e#53598#53622#0" />
+                <element signature="e#58877#61305#0" />
+                <element signature="e#61340#63770#0" />
+                <element signature="e#63805#66233#0" />
+                <element signature="e#66268#68697#0" />
+                <element signature="e#68732#71163#0" />
               </folding>
             </state>
           </provider>
@@ -326,15 +334,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="G:/python_spider/case/2.py" />
         <option value="G:/python_spider/case/3.py" />
         <option value="G:/python_spider/case/4.py" />
         <option value="D:/spider/image_spider.py" />
         <option value="$PROJECT_DIR$/case/test.py" />
         <option value="G:/python_spider/case/5.py" />
         <option value="$PROJECT_DIR$/log/get_log.py" />
-        <option value="$PROJECT_DIR$/case/bmkstest.py" />
-        <option value="$PROJECT_DIR$/case/dbwytest.py" />
         <option value="$PROJECT_DIR$/case/hometest.py" />
         <option value="G:/python_spider/case/6.py" />
         <option value="G:/quandashitest_old/case/mfsbtest.py" />
@@ -369,14 +374,17 @@
         <option value="$PROJECT_DIR$/case/sbnumber.py" />
         <option value="$PROJECT_DIR$/case/sbnumbertest.py" />
         <option value="$PROJECT_DIR$/case/mfsbtest.py" />
-        <option value="$PROJECT_DIR$/case/sbnumtest.py" />
         <option value="$PROJECT_DIR$/utils/readCsvFile.py" />
         <option value="$PROJECT_DIR$/start.py" />
-        <option value="$PROJECT_DIR$/case/hhrtest.py" />
-        <option value="$PROJECT_DIR$/case/znzztest.py" />
-        <option value="$PROJECT_DIR$/case/hwgstest.py" />
         <option value="$PROJECT_DIR$/utils/random.py" />
+        <option value="$PROJECT_DIR$/case/bmkstest.py" />
+        <option value="$PROJECT_DIR$/case/dbwytest.py" />
+        <option value="$PROJECT_DIR$/case/hwgstest.py" />
+        <option value="$PROJECT_DIR$/case/znzztest.py" />
+        <option value="$PROJECT_DIR$/case/sbnumtest.py" />
+        <option value="$PROJECT_DIR$/case/hhrtest.py" />
         <option value="$PROJECT_DIR$/case/zlywtest.py" />
+        <option value="$PROJECT_DIR$/case/qtzltest.py" />
       </list>
     </option>
   </component>
@@ -387,9 +395,10 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
-    <option name="height" value="1047" />
+    <option name="x" value="215" />
+    <option name="y" value="12" />
+    <option name="width" value="1040" />
+    <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -401,6 +410,17 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="quandashitest_company" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
       <pane id="Scope">
         <subPane subId="Scope 'Default'; set:Default; class com.intellij.packageDependencies.ChangeListScope">
           <expand>
@@ -435,23 +455,7 @@
             <path>
               <item name="quandashitest_company" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="report" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="quandashitest_company" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="utils" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="quandashitest_company" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
           </expand>
           <select />
@@ -492,7 +496,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for zlywtest.zlywtest.test_syzldb_1">
+  <component name="RunManager" selected="Python.start">
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -608,50 +612,6 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="random" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="quandashitest_company" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/random.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
-    <configuration name="readCsvFile" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <module name="quandashitest_company" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/utils" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/utils/readCsvFile.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <option name="EMULATE_TERMINAL" value="false" />
-      <option name="MODULE_MODE" value="false" />
-      <option name="REDIRECT_INPUT" value="false" />
-      <option name="INPUT_FILE" value="" />
-      <method v="2" />
-    </configuration>
     <configuration name="start" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="quandashitest_company" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -686,6 +646,21 @@
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <method v="2" />
     </configuration>
+    <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="quandashitest_company" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;zlywtest.zlywtest.test_cpwgdb_1&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
     <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_2" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="quandashitest_company" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -701,7 +676,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests for zlywtest.zlywtest.test_syzldb_1" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+    <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
       <module name="quandashitest_company" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -712,7 +687,22 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;zlywtest.zlywtest.test_syzldb_1&quot;" />
+      <option name="_new_target" value="&quot;zlywtest.zlywtest.test_cpwgdb_3&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unittests for zlywtest.zlywtest.test_guidb_3" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="quandashitest_company" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/case" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;zlywtest.zlywtest.test_guidb_3&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -783,19 +773,19 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Python.readCsvFile" />
-      <item itemvalue="Python.random" />
-      <item itemvalue="Python.start" />
+      <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_cpwgdb_3" />
       <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_cpwgdb_2" />
-      <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_syzldb_1" />
+      <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_cpwgdb_1" />
+      <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_guidb_3" />
+      <item itemvalue="Python.start" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_syzldb_1" />
-        <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_cpwgdb_2" />
         <item itemvalue="Python.start" />
-        <item itemvalue="Python.random" />
-        <item itemvalue="Python.readCsvFile" />
+        <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_guidb_3" />
+        <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_cpwgdb_2" />
+        <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_cpwgdb_1" />
+        <item itemvalue="Python tests.Unittests for zlywtest.zlywtest.test_cpwgdb_3" />
       </list>
     </recent_temporary>
   </component>
@@ -813,35 +803,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_hhrtest_hhrtest_test_hhrsbzc - 2018.08.23 at 17h 02m 39s.xml">
-      <configuration name="Unittests for hhrtest.hhrtest.test_hhrsbzc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_hhrtest_hhrtest_test_hhrsbzc - 2018.08.23 at 17h 07m 24s.xml">
-      <configuration name="Unittests for hhrtest.hhrtest.test_hhrsbzc" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_hhrtest_hhrtest_test_sbddxg - 2018.08.23 at 17h 10m 00s.xml">
-      <configuration name="Unittests for hhrtest.hhrtest.test_sbddxg" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_sbnumtest_sbnumtest_test_number1 - 2018.08.23 at 17h 15m 53s.xml">
+    <history-entry file="Unittests_for_sbnumtest_sbnumtest_test_number1 - 2018.08.24 at 16h 28m 50s.xml">
       <configuration name="Unittests for sbnumtest.sbnumtest.test_number1" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_sbnumtest_sbnumtest_test_number1 - 2018.08.23 at 17h 17m 56s.xml">
-      <configuration name="Unittests for sbnumtest.sbnumtest.test_number1" configurationId="tests" />
+    <history-entry file="Unittests_for_yytrtest_yytrtest_test_sbyy - 2018.08.24 at 16h 35m 19s.xml">
+      <configuration name="Unittests for yytrtest.yytrtest.test_sbyy" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_sbnumtest_sbnumtest_test_number1 - 2018.08.23 at 17h 21m 58s.xml">
-      <configuration name="Unittests for sbnumtest.sbnumtest.test_number1" configurationId="tests" />
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_3 - 2018.08.24 at 16h 51m 50s.xml">
+      <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_3" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_sbnumtest_sbnumtest_test_number2 - 2018.08.23 at 17h 23m 40s.xml">
-      <configuration name="Unittests for sbnumtest.sbnumtest.test_number2" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_sbnumtest_sbnumtest_test_number1 - 2018.08.23 at 17h 25m 08s.xml">
-      <configuration name="Unittests for sbnumtest.sbnumtest.test_number1" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_2 - 2018.08.23 at 18h 36m 01s.xml">
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_2 - 2018.08.24 at 16h 54m 34s.xml">
       <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_2" configurationId="tests" />
     </history-entry>
-    <history-entry file="Unittests_for_zlywtest_zlywtest_test_syzldb_1 - 2018.08.23 at 18h 47m 09s.xml">
-      <configuration name="Unittests for zlywtest.zlywtest.test_syzldb_1" configurationId="tests" />
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_1 - 2018.08.24 at 16h 57m 02s.xml">
+      <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_1 - 2018.08.24 at 17h 01m 35s.xml">
+      <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_1" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_2 - 2018.08.24 at 17h 02m 57s.xml">
+      <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_2 - 2018.08.24 at 17h 04m 01s.xml">
+      <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_cpwgdb_2 - 2018.08.24 at 17h 04m 46s.xml">
+      <configuration name="Unittests for zlywtest.zlywtest.test_cpwgdb_2" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_zlywtest_zlywtest_test_guidb_3 - 2018.08.24 at 17h 07m 22s.xml">
+      <configuration name="Unittests for zlywtest.zlywtest.test_guidb_3" configurationId="tests" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -857,13 +847,13 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18125" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18125" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32873806" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.47916666" visible="true" weight="0.34464476" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49573562" weight="0.5111347" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47916666" visible="true" weight="0.36797455" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49573562" weight="0.36585367" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
@@ -876,26 +866,6 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.33974358" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" sideWeight="0.4978678" weight="0.32936078" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.48103267" visible="true" weight="0.30401736" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49573562" weight="0.51140064" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32936078" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.51896733" side_tool="true" weight="0.30401736" />
-      <window_info anchor="bottom" id="Python Console" order="8" weight="0.32899022" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32899022" />
-      <window_info anchor="bottom" id="Version Control" order="10" weight="0.3287234" />
-      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
@@ -944,15 +914,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://G:/quandashitest_old/case/bmkstest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/config.py" />
-    <entry file="file://$PROJECT_DIR$/utils/file_reader.py" />
     <entry file="file://$PROJECT_DIR$/config/config.yml" />
     <entry file="file://$PROJECT_DIR$/report/2018-08-13_08-44-58_report.html">
       <provider selected="true" editor-type-id="text-editor">
@@ -978,9 +939,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="931">
           <caret line="69" column="50" selection-start-line="69" selection-start-column="38" selection-end-line="69" selection-end-column="50" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1015,16 +973,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/testcase/pp/common.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="11" column="34" lean-forward="true" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/testcase/pp/settings.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/testcase/pp/common.py" />
+    <entry file="file://$USER_HOME$/Desktop/testcase/pp/settings.py" />
     <entry file="file://$PROJECT_DIR$/report/2018-08-14_13-45-35_report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -1042,21 +992,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/testcase/pp/test_case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2480">
-          <caret line="159" column="101" selection-start-line="159" selection-start-column="101" selection-end-line="159" selection-end-column="101" />
-          <folding>
-            <element signature="e#23#55#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/cxzctest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-48" />
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/testcase/pp/test_case.py" />
     <entry file="file://$PROJECT_DIR$/log/2018-08-16.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="528">
@@ -1064,16 +1000,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/testcase/pp/driver_engine.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/testcase/pp/driver_engine.py" />
     <entry file="file://$PROJECT_DIR$/utils/screenshort.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
           <caret line="7" column="46" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="46" />
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1084,20 +1015,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/dbwytest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="37" selection-start-line="37" selection-end-line="37" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://D:/quandashitest/runAllTestCases.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-130">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#15#24#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1105,9 +1026,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
-          <folding>
-            <element signature="e#15#29#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1144,15 +1062,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="e#301#3306#0" />
-            <element signature="e#3344#6348#0" />
-            <element signature="e#6386#9385#0" />
-            <element signature="e#9423#12454#0" />
-            <element signature="e#12499#15532#0" />
-            <element signature="e#15621#18665#0" />
-            <element signature="e#15646#15707#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1163,29 +1072,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/logincookie.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/numberfilter.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="6" column="36" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="36" />
-          <folding>
-            <marker date="1534921554493" expanded="true" signature="24:167" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/mfsbtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-312">
-          <folding>
-            <element signature="e#2#13#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1203,17 +1093,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/yytrtest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#302#2723#0" />
-            <element signature="e#2758#5181#0" />
-            <element signature="e#5216#7643#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/report/2018-08-23_12-00-51_report.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -1221,127 +1100,186 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/case/bmkstest.py">
+    <entry file="file://$PROJECT_DIR$/utils/readCsvFile.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="48" column="75" lean-forward="true" selection-start-line="48" selection-start-column="75" selection-end-line="48" selection-end-column="75" />
+        <state relative-caret-position="288">
+          <caret line="20" column="10" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/cxzctest.py">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/utils/chinese">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="368">
-          <caret line="189" column="56" lean-forward="true" selection-start-line="189" selection-start-column="56" selection-end-line="189" selection-end-column="56" />
+          <caret line="189" column="56" selection-start-line="189" selection-start-column="56" selection-end-line="189" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/readCsvFile.py">
+    <entry file="file://$PROJECT_DIR$/report/2018-08-24_12-00-44_report.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="320">
-          <caret line="20" column="10" lean-forward="true" selection-start-line="20" selection-start-column="10" selection-end-line="20" selection-end-column="10" />
+        <state relative-caret-position="112">
+          <caret line="7" column="94" lean-forward="true" selection-start-line="7" selection-start-column="94" selection-end-line="7" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/mfsbtest.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/bmkstest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="36" column="7" selection-start-line="36" selection-start-column="7" selection-end-line="48" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/random.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="566">
+          <caret line="1161" column="40" selection-start-line="1161" selection-start-column="40" selection-end-line="1161" selection-end-column="40" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#0#13#0" expanded="true" />
+            <marker date="1535082337289" expanded="true" signature="63532:63537" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/start.py">
+    <entry file="file://$PROJECT_DIR$/utils/logincookie.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1592">
-          <caret line="299" lean-forward="true" selection-start-line="299" selection-end-line="299" />
+        <state relative-caret-position="112">
+          <caret line="7" column="63" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/hwgstest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="56" column="8" lean-forward="true" selection-start-line="56" selection-start-column="8" selection-end-line="56" selection-end-column="35" />
           <folding>
-            <element signature="e#0#13#0" expanded="true" />
+            <element signature="e#15#28#0" expanded="true" />
+            <element signature="e#9321#19011#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/hometest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-96" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/dbwytest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="16" column="24" lean-forward="true" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/yytrtest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="89" lean-forward="true" selection-start-line="89" selection-end-line="89" />
+          <folding>
+            <element signature="e#302#2723#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/hhrtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="112" column="27" selection-start-line="112" selection-start-column="27" selection-end-line="112" selection-end-column="27" />
+        <state relative-caret-position="36">
+          <caret line="191" column="21" selection-start-line="191" selection-start-column="21" selection-end-line="191" selection-end-column="21" />
           <folding>
-            <element signature="e#269#7413#0" />
-            <element signature="e#7455#13917#0" />
-            <element signature="e#13959#19923#0" />
+            <element signature="e#304#7451#0" />
+            <element signature="e#14052#20031#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/znzztest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="242">
+          <caret line="26" column="36" lean-forward="true" selection-start-line="43" selection-start-column="14" selection-end-line="43" selection-end-column="31" />
           <folding>
-            <element signature="e#269#9368#0" />
-            <element signature="e#9406#17943#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/case/hwgstest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="490">
-          <caret line="210" column="347" selection-start-line="210" selection-start-column="347" selection-end-line="210" selection-end-column="347" />
-          <folding>
-            <element signature="e#15#28#0" expanded="true" />
+            <element signature="e#9477#18032#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/sbnumtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1360">
-          <caret line="85" column="93" lean-forward="true" selection-start-line="85" selection-start-column="93" selection-end-line="85" selection-end-column="93" />
+        <state relative-caret-position="-172">
+          <caret line="136" column="49" lean-forward="true" selection-start-line="136" selection-start-column="49" selection-end-line="136" selection-end-column="49" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1534933419917" expanded="true" signature="182:183" ph="..." />
-            <marker date="1534933419917" expanded="true" signature="182:187" ph="..." />
-            <marker date="1534933419917" expanded="true" signature="214:224" ph="..." />
-            <marker date="1534933419917" expanded="true" signature="215:220" ph="..." />
+            <marker date="1535098976824" expanded="true" signature="183:184" ph="..." />
+            <marker date="1535098976824" expanded="true" signature="183:206" ph="..." />
+            <marker date="1535098976824" expanded="true" signature="233:243" ph="..." />
+            <marker date="1535098976824" expanded="true" signature="234:239" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/random.py">
+    <entry file="file://$PROJECT_DIR$/start.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-552">
-          <caret line="399" column="56" lean-forward="true" selection-start-line="399" selection-start-column="56" selection-end-line="399" selection-end-column="56" />
+        <state relative-caret-position="450">
+          <caret line="302" column="8" lean-forward="true" selection-start-line="302" selection-start-column="8" selection-end-line="302" selection-end-column="8" />
           <folding>
             <element signature="e#0#13#0" expanded="true" />
-            <marker date="1535016666301" expanded="true" signature="25002:25007" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/case/zlywtest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="369">
-          <caret line="1042" column="89" lean-forward="true" selection-start-line="1042" selection-start-column="89" selection-end-line="1042" selection-end-column="89" />
+        <state relative-caret-position="370">
+          <caret line="1431" column="24" selection-start-line="1431" selection-start-column="24" selection-end-line="1431" selection-end-column="24" />
           <folding>
             <element signature="e#300#2837#0" />
-            <element signature="e#2874#5312#0" />
-            <element signature="e#5572#8217#0" />
-            <element signature="e#8264#10920#0" />
-            <element signature="e#10947#13603#0" />
-            <element signature="e#13785#16573#0" />
-            <element signature="e#16618#19398#0" />
-            <element signature="e#5346#7891#0" />
-            <element signature="e#8048#10693#0" />
-            <element signature="e#10720#13366#0" />
-            <element signature="e#13398#16043#0" />
-            <element signature="e#16081#18726#0" />
-            <element signature="e#18764#21401#0" />
-            <element signature="e#7797#10828#0" />
-            <element signature="e#10894#13939#0" />
-            <element signature="e#13981#17021#0" />
-            <element signature="e#20182#23258#0" />
-            <element signature="e#23300#26372#0" />
-            <element signature="e#7764#7788#0" />
-            <element signature="e#12732#15160#0" />
-            <element signature="e#15195#17625#0" />
-            <element signature="e#17660#20088#0" />
-            <element signature="e#20123#22552#0" />
-            <element signature="e#22587#25018#0" />
+            <element signature="e#2877#5527#0" />
+            <element signature="e#5566#8222#0" />
+            <element signature="e#8261#10909#0" />
+            <element signature="e#10948#13606#0" />
+            <element signature="e#13645#16346#0" />
+            <element signature="e#16385#19077#0" />
+            <element signature="e#19117#21764#0" />
+            <element signature="e#21802#24449#0" />
+            <element signature="e#24487#27126#0" />
+            <element signature="e#27164#29857#0" />
+            <element signature="e#29895#32588#0" />
+            <element signature="e#32626#35312#0" />
+            <element signature="e#35352#38359#0" />
+            <element signature="e#38398#41404#0" />
+            <element signature="e#41443#44445#0" />
+            <element signature="e#44484#47491#0" />
+            <element signature="e#47530#50536#0" />
+            <element signature="e#50575#53576#0" />
+            <element signature="e#53598#53622#0" />
+            <element signature="e#58877#61305#0" />
+            <element signature="e#61340#63770#0" />
+            <element signature="e#63805#66233#0" />
+            <element signature="e#66268#68697#0" />
+            <element signature="e#68732#71163#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/case/qtzltest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="450">
+          <caret line="603" column="26" selection-start-line="603" selection-start-column="26" selection-end-line="603" selection-end-column="26" />
+          <folding>
+            <element signature="e#302#2785#0" />
+            <element signature="e#2867#5433#0" />
+            <element signature="e#2767#5197#0" />
+            <element signature="e#7995#10517#0" />
+            <element signature="e#5232#7660#0" />
+            <element signature="e#13123#15647#0" />
+            <element signature="e#15674#18103#0" />
+            <element signature="e#18249#20861#0" />
+            <element signature="e#10159#12590#0" />
+            <element signature="e#23374#25899#0" />
+            <element signature="e#25935#28459#0" />
           </folding>
         </state>
       </provider>

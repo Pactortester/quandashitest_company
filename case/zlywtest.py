@@ -275,7 +275,7 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
 
         time.sleep(3)
 
@@ -286,9 +286,10 @@ class zlywtest(mytestcase):
         self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
 
-
-        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
         self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+        time.sleep(2)
+        self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
+
 
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
@@ -338,7 +339,7 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
 
         time.sleep(3)
 
@@ -349,11 +350,11 @@ class zlywtest(mytestcase):
         self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
 
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
         time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
 
-        time.sleep(2)
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:" + a.text)
@@ -389,7 +390,7 @@ class zlywtest(mytestcase):
 
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
-    def test_cpwgbz_3(self):
+    def test_cpwgdb_3(self):
         """产品外观担保_不减缓测试"""
 
         dl = dengLuPage(self.driver)
@@ -402,7 +403,7 @@ class zlywtest(mytestcase):
             "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(2) > div > dl:nth-child(3) > dd > a:nth-child(1)").click()
 
         time.sleep(3)
 
@@ -413,10 +414,10 @@ class zlywtest(mytestcase):
         self.assertIn("外观设计专利标准申请|专利申请|专利查询|权大师", self.driver.title)
         print(self.driver.title)
 
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
         time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
-        time.sleep(2)
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:" + a.text)
@@ -659,11 +660,10 @@ class zlywtest(mytestcase):
         self.driver.switch_to.window(windows[-1])
         self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
-
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
         time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label.label.active").click()  # 单个申请人减缓
-        time.sleep(2)
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
 
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
@@ -722,12 +722,11 @@ class zlywtest(mytestcase):
         self.driver.switch_to.window(windows[-1])
         self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
-
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
         time.sleep(2)
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(2)").click()  # 多个申请人减缓
 
-        time.sleep(2)
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
             print("费用总计:"+a.text)
@@ -785,12 +784,12 @@ class zlywtest(mytestcase):
         self.driver.switch_to.window(windows[-1])
         self.assertIn("GUI及系列产品标准申请|专利申请|专利查询|权大师",self.driver.title)
         print(self.driver.title)
-
+        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
         time.sleep(2)
 
         self.driver.find_element_by_css_selector("#slowItems > label:nth-child(3)").click()  # 不减缓
-        time.sleep(2)
-        self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()  # 担保
+
+
 
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
@@ -1140,7 +1139,6 @@ class zlywtest(mytestcase):
 
     def test_syzldb_3(self):
         """担保型-不减缓"""
-
         # logging.basicConfig(filename='../LOG/' + __name__ + '.log',
         #                     format='[%(asctime)s-%(filename)s-%(levelname)s: %(message)s]', level=logging.DEBUG,
         #                     filemode='a', datefmt='%Y-%m-%d%I:%M:%S %p')
@@ -1199,8 +1197,6 @@ class zlywtest(mytestcase):
         print("测试通过")
 
         self.driver.find_element_by_css_selector("#alisubmit").click()
-
-
     """旧版专利商品"""
     # def test_syxxjc(self):
     #     """实用新型专利基础版"""
@@ -1338,7 +1334,7 @@ class zlywtest(mytestcase):
         windows = self.driver.window_handles
         # 切换到当前最新打开的窗口
         self.driver.switch_to.window(windows[-1])
-        self.assertIn("专利驳回复审_权大师", self.driver.title)
+        self.assertIn("发明专利驳回复审_权大师", self.driver.title)
         print(self.driver.title)
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
@@ -1434,7 +1430,7 @@ class zlywtest(mytestcase):
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
     def test_zldb(self):
-        """专利无效答辩测试"""
+        """发明专利无效答辩测试"""
 
         dl = dengLuPage(self.driver)
         dl.dengLu()
@@ -1453,7 +1449,7 @@ class zlywtest(mytestcase):
         windows = self.driver.window_handles
         # 切换到当前最新打开的窗口
         self.driver.switch_to.window(windows[-1])
-        self.assertIn("专利无效答辩_权大师", self.driver.title)
+        self.assertIn("发明专利无效答辩_权大师", self.driver.title)
         print(self.driver.title)
 
         for a in self.driver.find_elements_by_css_selector("#total-price"):
