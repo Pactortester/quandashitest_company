@@ -24,12 +24,10 @@ class cxzctest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
-        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > div > dl:nth-child(2) > dd > a:nth-child(1)").click()
+            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(1) > dd > a:nth-child(1)").click()
         time.sleep(3)
 
         # 获取打开的多个窗口句柄
@@ -54,12 +52,10 @@ class cxzctest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
-        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > div > dl:nth-child(2) > dd > a:nth-child(2)").click()
+            "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(1) > dd > a:nth-child(2)").click()
         time.sleep(3)
 
         # 获取打开的多个窗口句柄
