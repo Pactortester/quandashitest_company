@@ -18,4 +18,4 @@ read()
 #with 这句话可保证 关闭文件 相当于file.close()
 
 if __name__ == "__main__":
-    unittest
+    read()
