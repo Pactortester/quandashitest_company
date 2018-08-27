@@ -6,13 +6,14 @@ import logging
 
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
+from utils.random import Unicode
 from utils.screenshort import get_screenshort
 
 class hhrtest(mytestcase):
 
     """合伙人个人中心测试集"""
 
-    def test_sbdd(self):
+    def test_sbddxg(self):
         """商标订单"""
         dl = dengLuPage(self.driver)
         dl.dengLu()
@@ -101,7 +102,7 @@ class hhrtest(mytestcase):
         time.sleep(1)
 
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div.order-detail-fix > div > div.right > div.pay-btns > a").click()
-        get_screenshort(self.driver,"fwddtest.png")
+        get_screenshort(self.driver,"test_sbddxg.png")
 
         #self.driver.find_element_by_css_selector("#layui-layer100001 > div.layui-layer-btn.layui-layer-btn- > a.layui-layer-btn0").click()
 
@@ -127,7 +128,9 @@ class hhrtest(mytestcase):
         """填写商标信息"""
 
         self.driver.find_element_by_css_selector("#selectBrandType > label.label.checked").click()
-        self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(1) > div.brandInfo-wrap > div > table > tbody > tr.row-name > td.td-content > input").send_keys("大佬")
+        ss=Unicode()
+        self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(1) > div.brandInfo-wrap > div > table > tbody > tr.row-name > td.td-content > input").send_keys("{}".format(ss))
+        print("商标名称：{}".format(ss))
         self.driver.find_element_by_css_selector("#create-tuyang > label.label.checked").click()
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(1) > div.brandInfo-wrap > div > table > tbody > tr.row-tuyang.show-create.show-create1 > td.td-content > div.zidongdong-create > ul > li > div.bottom.getBrandPic > a").click()
 
@@ -159,7 +162,7 @@ class hhrtest(mytestcase):
         """申请人信息"""
         self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div/div[1]/div/div[3]/div/table/thead/tr[1]/td[2]/a[1]").click()
         self.driver.find_element_by_xpath("//*[@id=\"overseastype\"]/label[1]").click()
-        self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div/div[1]/div/div[3]/div/div/div/div/table[1]/tbody[1]/tr[1]/td[2]/dl/dt/input").send_keys("文思海辉技术有限公司")
+        self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div/div[1]/div/div[3]/div/div/div/div/table[1]/tbody[1]/tr[1]/td[2]/dl/dt/input").send_keys("文思海辉技术有限公司{}".format(random.randint(1,1000)))
         self.driver.find_element_by_xpath("//*[@id=\"ssq\"]").click()
         self.driver.find_element_by_xpath("//*[@id=\"companylistrative\"]/div/div[2]/div[1]/dl[1]/dd/span[1]").click()
         self.driver.find_element_by_xpath("//*[@id=\"companylistrative\"]/div/div[2]/div[2]/dl[2]/dd/span[1]").click()
@@ -178,7 +181,7 @@ class hhrtest(mytestcase):
         """订单备注"""
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div.order-detail-box.message-box > ul > li > textarea").send_keys(time.strftime("%Y-%m-%d_%H-%M-%S")+"测试订单")
 
-        self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(7) > div > a.mybtn.mybtn-inverse.mybtn-lg.saveAll").click()
+        #self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(7) > div > a.mybtn.mybtn-inverse.mybtn-lg.saveAll").click()
 
 
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(7) > div > a:nth-child(2)").click()
@@ -188,17 +191,17 @@ class hhrtest(mytestcase):
         for o in self.driver.find_elements_by_class_name("payable"):
             print("订单提交成功，应付金额:"+o.text)
             oo=o.text
-
+        time.sleep(2)
         self.assertIn(oo,ii)
 
-        self.driver.find_element_by_css_selector("#payways > li:nth-child(1) > span").click()
+        self.driver.find_element_by_css_selector("#payways > ul:nth-child(1) > li").click()
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
         print("价格一致")
 
         print("合伙人订单下单成功!")
 
-        get_screenshort(self.driver,"hhrtest.png")
+        get_screenshort(self.driver,"test_hhrsbzc.png")
 
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div.paying-wrap.paying-sk-wrap > div.paying-sk-button > a.button.send").click()
 
@@ -232,7 +235,7 @@ class hhrtest(mytestcase):
         """填写商标信息"""
 
         self.driver.find_element_by_xpath("//*[@id=\"selectBrandType\"]/label[1]").click()
-        self.driver.find_element_by_name("brandName").send_keys("dalao")
+        self.driver.find_element_by_name("brandName").send_keys("{}".format(Unicode()))
         self.driver.find_element_by_xpath("//*[@id=\"create-tuyang\"]/label[2]").click()
         self.driver.find_element_by_xpath("//*[@id=\"personalCenter2-rightContainer\"]/div/div[1]/div[3]/div[1]/div[1]/table/tbody/tr[4]/td[2]/div[3]/ul/li/div[2]/a").click()
         time.sleep(2)

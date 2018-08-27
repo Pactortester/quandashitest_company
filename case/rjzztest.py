@@ -14,7 +14,7 @@ class rjzztest(mytestcase):
     """软件著作权测试集"""
 
     def test_rjzz(self):
-        """软件著作权登记"""
+        """软件著作权登记加急"""
 
         # logging.basicConfig(filename='../LOG/' + __name__ + '.log',
         #                     format='[%(asctime)s-%(filename)s-%(levelname)s: %(message)s]', level=logging.DEBUG,
@@ -22,8 +22,23 @@ class rjzztest(mytestcase):
         dl = dengLuPage(self.driver)
         dl.dengLu()
         time.sleep(2)
+<<<<<<< HEAD
         self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(3) > a").click()
 
+=======
+
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(3) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(3) > div > dl:nth-child(1) > dd > a:nth-child(2)").click()
+        time.sleep(2)
+
+        #print(self.driver.title)
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         self.assertIn("软件著作权登记-权大师",self.driver.title)
         print(self.driver.title)
         self.driver.find_element_by_css_selector("#serviceName > li.list.active").click()
@@ -66,7 +81,7 @@ class rjzztest(mytestcase):
         self.driver.find_element_by_css_selector("#alisubmit").click()
 
     def test_rjzz_j(self):
-        """软件著作权登记加急"""
+        """软件著作权登记"""
 
         # logging.basicConfig(filename='../LOG/' + __name__ + '.log',
         #                     format='[%(asctime)s-%(filename)s-%(levelname)s: %(message)s]', level=logging.DEBUG,
@@ -74,9 +89,21 @@ class rjzztest(mytestcase):
         dl = dengLuPage(self.driver)
         dl.dengLu()
         time.sleep(2)
+<<<<<<< HEAD
         self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(3) > a").click()
+=======
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(3) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(3) > div > dl:nth-child(1) > dd > a:nth-child(1)").click()
+        time.sleep(2)
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
 
-        self.assertIn("软件著作权登记-权大师", self.driver.title)
+        self.assertIn("软件著作权登记加急-权大师", self.driver.title)
         print(self.driver.title)
         self.driver.find_element_by_css_selector("#serviceName > li:nth-child(2)").click()
 

@@ -22,7 +22,14 @@ class sbzrtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+<<<<<<< HEAD
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
+=======
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(6) > dd > a:nth-child(1)").click()
@@ -77,7 +84,14 @@ class sbzrtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+<<<<<<< HEAD
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
+=======
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(6) > dd > a:nth-child(2)").click()
@@ -132,7 +146,14 @@ class sbzrtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+<<<<<<< HEAD
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
+=======
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(6) > dd > a:nth-child(3)").click()
@@ -187,7 +208,14 @@ class sbzrtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+<<<<<<< HEAD
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
+=======
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(6) > dd > a:nth-child(4)").click()
@@ -242,7 +270,14 @@ class sbzrtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+<<<<<<< HEAD
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
+=======
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(6) > dd > a:nth-child(5)").click()
@@ -297,7 +332,14 @@ class sbzrtest(mytestcase):
         dl.dengLu()
         time.sleep(2)
         ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+<<<<<<< HEAD
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > h3 > a")).perform()
+=======
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         ActionChains(self.driver).release()
         self.driver.find_element_by_css_selector(
             "#com-navbar > div > div.drop-nav > div > ul > li:nth-child(1) > div > dl:nth-child(6) > dd > a:nth-child(6)").click()

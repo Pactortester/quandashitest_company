@@ -4,6 +4,8 @@ import time
 
 import logging
 
+from selenium.webdriver import ActionChains
+
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
 from utils.screenshort import get_screenshort
@@ -24,9 +26,26 @@ class dbwytest(mytestcase):
         # self.driver.find_element()
         dl.dengLu()
         time.sleep(2)
+<<<<<<< HEAD
         self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(1) > a").click()
         time.sleep(1)
         self.assertIn("商标注册-权大师", self.driver.title)
+=======
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
+        time.sleep(2)
+        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
+        ActionChains(self.driver).release()
+        self.driver.find_element_by_css_selector(
+            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > div > dl:nth-child(3) > dd > a:nth-child(2)").click()
+        # 获取打开的多个窗口句柄
+        windows = self.driver.window_handles
+        # 切换到当前最新打开的窗口
+        self.driver.switch_to.window(windows[-1])
+        time.sleep(3)
+        self.assertIn("担保无忧注册-权大师", self.driver.title)
+>>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
         print(self.driver.title)
         # abwy注册
         self.driver.find_element_by_css_selector(
