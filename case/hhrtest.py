@@ -128,9 +128,7 @@ class hhrtest(mytestcase):
         """填写商标信息"""
 
         self.driver.find_element_by_css_selector("#selectBrandType > label.label.checked").click()
-        ss=Unicode()
-        self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(1) > div.brandInfo-wrap > div > table > tbody > tr.row-name > td.td-content > input").send_keys("{}".format(ss))
-        print("商标名称：{}".format(ss))
+        self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(1) > div.brandInfo-wrap > div > table > tbody > tr.row-name > td.td-content > input").send_keys("{}".format(Unicode()))
         self.driver.find_element_by_css_selector("#create-tuyang > label.label.checked").click()
         self.driver.find_element_by_css_selector("#personalCenter2-rightContainer > div > div.order-form-page > div > div:nth-child(1) > div.brandInfo-wrap > div > table > tbody > tr.row-tuyang.show-create.show-create1 > td.td-content > div.zidongdong-create > ul > li > div.bottom.getBrandPic > a").click()
 
@@ -191,7 +189,7 @@ class hhrtest(mytestcase):
         for o in self.driver.find_elements_by_class_name("payable"):
             print("订单提交成功，应付金额:"+o.text)
             oo=o.text
-        time.sleep(2)
+
         self.assertIn(oo,ii)
 
         self.driver.find_element_by_css_selector("#payways > ul:nth-child(1) > li").click()

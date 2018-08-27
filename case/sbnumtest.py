@@ -10,7 +10,7 @@ from utils.random import Unicode
 
 class sbnumtest(mytestcase):
 
-    """相似商标个数测试集"""
+
 
 
     def test_number1(self):
@@ -22,8 +22,8 @@ class sbnumtest(mytestcase):
         time.sleep(2)
         self.driver.find_element_by_css_selector("body > div.section-banner > div.public-navbar > div > ul > li:nth-child(1) > a").click()
         time.sleep(1)
-        self.assertIn("保姆快速注册-权大师", self.driver.title)
-        print("智能商标注册-权大师")
+        self.assertIn("商标注册-权大师", self.driver.title)
+        print(self.driver.title)
         self.driver.find_element_by_css_selector(
             "body > div.section-product.width1200 > dl > dd > div.cont-serviceItems > table > tbody > tr > td.td-cont > ul > li:nth-child(3)").click()
 
@@ -93,13 +93,9 @@ class sbnumtest(mytestcase):
         time.sleep(3)
 
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips1 > a").click()
-        time.sleep(1)
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips2 > a").click()
-        time.sleep(1)
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips3 > a").click()
-        time.sleep(1)
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips4 > a").click()
-        time.sleep(1)
 
         number2=self.driver.find_element_by_css_selector("#searchList > div.page-content.w-center > div.page-content-left > div.search-top > i").text
 
@@ -118,8 +114,8 @@ class sbnumtest(mytestcase):
         self.driver.find_element_by_css_selector(
             "body > div.section-banner > div.public-navbar > div > ul > li:nth-child(1) > a").click()
         time.sleep(1)
-        self.assertIn("保姆快速注册-权大师", self.driver.title)
-        print("智能商标注册-权大师")
+        self.assertIn("商标注册-权大师", self.driver.title)
+        print(self.driver.title)
         self.driver.find_element_by_css_selector(
             "body > div.section-product.width1200 > dl > dd > div.cont-serviceItems > table > tbody > tr > td.td-cont > ul > li:nth-child(3)").click()
 
@@ -170,13 +166,9 @@ class sbnumtest(mytestcase):
         time.sleep(3)
 
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips1 > a").click()
-        time.sleep(1)
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips2 > a").click()
-        time.sleep(1)
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips3 > a").click()
-        time.sleep(1)
         self.driver.find_element_by_css_selector("body > div.page > div.search-help > div.tips.tips4 > a").click()
-        time.sleep(1)
 
         number2 = self.driver.find_element_by_css_selector(
             "#searchList > div.page-content.w-center > div.page-content-left > div.search-top > i").text
