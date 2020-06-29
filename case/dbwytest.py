@@ -4,8 +4,6 @@ import time
 
 import logging
 
-from selenium.webdriver import ActionChains
-
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
 from utils.screenshort import get_screenshort
@@ -27,6 +25,7 @@ class dbwytest(mytestcase):
         dl.dengLu()
         time.sleep(2)
 <<<<<<< HEAD
+<<<<<<< HEAD
         self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(1) > a").click()
         time.sleep(1)
         self.assertIn("商标注册-权大师", self.driver.title)
@@ -46,6 +45,11 @@ class dbwytest(mytestcase):
         time.sleep(3)
         self.assertIn("担保无忧注册-权大师", self.driver.title)
 >>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
+=======
+        self.driver.find_element_by_css_selector("body > div.section-banner > div.public-navbar > div > ul > li:nth-child(1) > a").click()
+        time.sleep(1)
+        self.assertIn("商标注册-权大师", self.driver.title)
+>>>>>>> parent of 96013fa... 8.24
         print(self.driver.title)
         # abwy注册
         self.driver.find_element_by_css_selector(

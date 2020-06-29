@@ -297,7 +297,5 @@ from selenium import webdriver
 from utils.random import Unicode
 
 print("包针雨我爱你！")
-s=Unicode()
-a=len(s)
-print(a)
-print(s)
+
+print(Unicode())

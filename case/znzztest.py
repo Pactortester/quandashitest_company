@@ -4,8 +4,6 @@ import time
 
 import logging
 
-from selenium.webdriver import ActionChains
-
 from utils.mytestcase import mytestcase
 from utils.logincookie import dengLuPage
 from utils.random import Unicode
@@ -28,6 +26,7 @@ class znzztest(mytestcase):
         dl.dengLu()
         time.sleep(2)
 <<<<<<< HEAD
+<<<<<<< HEAD
         self.driver.find_element_by_css_selector("#com-navbar > div > ul > li:nth-child(1) > a").click()
         time.sleep(1)
         self.assertIn("商标注册-权大师", self.driver.title)
@@ -47,6 +46,11 @@ class znzztest(mytestcase):
         time.sleep(3)
         self.assertIn("商标购买页面_权大师", self.driver.title)
 >>>>>>> 96013fa4116080cc88e432c305fdb48fec06a5d1
+=======
+        self.driver.find_element_by_css_selector("body > div.section-banner > div.public-navbar > div > ul > li:nth-child(1) > a").click()
+        time.sleep(1)
+        self.assertIn("商标注册-权大师", self.driver.title)
+>>>>>>> parent of 96013fa... 8.24
         print(self.driver.title)
         self.driver.find_element_by_css_selector(
             "body > div.section-product.width1200 > dl > dd > div.cont-serviceItems > table > tbody > tr > td.td-cont > ul > li:nth-child(3)").click()
@@ -57,11 +61,9 @@ class znzztest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
-        ss=Unicode()
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-name > td.td-content > input").send_keys(
-            "{}".format(ss))
-        print("商标名称：{}".format(ss))
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-tuyang.show-create.show-create1 > td.td-content > div.zidongdong-create > ul > li > div.bottom.getBrandPic > a").click()
         self.driver.find_element_by_css_selector("#create-tuyang > label.label.checked").click()
@@ -184,20 +186,9 @@ class znzztest(mytestcase):
         # self.driver.find_element()
         dl.dengLu()
         time.sleep(2)
-        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > h3 > span")).perform()
-        time.sleep(2)
-        ActionChains(self.driver).move_to_element(self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > h3 > a")).perform()
-        ActionChains(self.driver).release()
-        self.driver.find_element_by_css_selector(
-            "body > div.section-banner > div.public-navbar > div > div > div > ul:nth-child(1) > li:nth-child(1) > div > dl:nth-child(3) > dd > a:nth-child(3)").click()
-        # 获取打开的多个窗口句柄
-        windows = self.driver.window_handles
-        # 切换到当前最新打开的窗口
-        self.driver.switch_to.window(windows[-1])
-        time.sleep(3)
-        self.assertIn("商标购买页面_权大师", self.driver.title)
+        self.driver.find_element_by_css_selector("body > div.section-banner > div.public-navbar > div > ul > li:nth-child(1) > a").click()
+        time.sleep(1)
+        self.assertIn("商标注册-权大师", self.driver.title)
         print(self.driver.title)
         self.driver.find_element_by_css_selector(
             "body > div.section-product.width1200 > dl > dd > div.cont-serviceItems > table > tbody > tr > td.td-cont > ul > li:nth-child(3)").click()
@@ -208,11 +199,9 @@ class znzztest(mytestcase):
 
         self.driver.find_element_by_css_selector(
             "body > div.section-product.width1200 > dl > dd > div.cont-btnBuy > a.btn.btn-next.buynow").click()
-        ss=Unicode()
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-name > td.td-content > input").send_keys(
-            "{}".format(ss))
-        print("商标名称：{}".format(ss))
+            "{}".format(Unicode()))
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page.smartRegister3-page > div:nth-child(4) > div > table > tbody > tr.row-tuyang.show-create.show-create1 > td.td-content > div.zidongdong-create > ul > li > div.bottom.getBrandPic > a").click()
         self.driver.find_element_by_css_selector("#create-tuyang > label.label.checked").click()
@@ -264,30 +253,28 @@ class znzztest(mytestcase):
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table.table-1.table-applicant.table-type1.active > tbody.tbody-gsh > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").clear()
 
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table.table-1.table-applicant.table-type1.active > tbody.tbody-gsh > tr:nth-child(1) > td.td-content.contact-select-container > dl > dt > input").send_keys(
-            "{}".format(Unicode()))
+            "人{}才".format(suiji))
         self.driver.find_element_by_css_selector("#geren-idCard").send_keys("140121198906133513")
         time.sleep(1)
         self.driver.find_element_by_css_selector("#personalssq").click()
         self.driver.find_element_by_css_selector("#personalistrative > div > div.d-dropdown > div.tab-content.active.tab-province > dl.item.item-a-g.clearfix > dd > span:nth-child(1)").click()
         self.driver.find_element_by_css_selector("#personalistrative > div > div.d-dropdown > div.tab-content.tab-city.active > dl.item.item-a-g.clearfix > dd > span:nth-child(1)").click()
-        self.driver.find_element_by_css_selector("#geren-postcode").clear()
-        self.driver.find_element_by_css_selector("#geren-postcode").send_keys("102200")
-        self.driver.find_element_by_css_selector("#geren-street").clear()
-        self.driver.find_element_by_css_selector("#geren-street").send_keys("北京市昌平区")
 
-        self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table:nth-child(13) > tbody.tbody-gsh > tr:nth-child(1) > td.td-content > input").send_keys("{}".format(Unicode()))
+        self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table:nth-child(13) > tbody.tbody-gsh > tr:nth-child(1) > td.td-content > input").send_keys("dada")
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table:nth-child(13) > tbody.tbody-gsh > tr:nth-child(2) > td.td-content > input").send_keys("15122311456")
         self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > table:nth-child(13) > tbody.tbody-gsh > tr:nth-child(3) > td.td-content > input").send_keys("123313@qq.com")
 
 
 
         #解决常用申请人弹框，点击空白处
-        # self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > h2").click()
+        self.driver.find_element_by_css_selector("body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.applicant-form > h2").click()
 
         self.driver.find_element_by_css_selector(
             "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base.open > div.section-btns.clearfix > a:nth-child(2)").click()
         time.sleep(1)
-
+        # self.driver.find_element_by_css_selector(
+        #     "body > div.smartRegister-page > div.agentInfo-wrap.applicant-wrap > div.section-base > div.section-btns.clearfix > a:nth-child(2)").click()
+        # time.sleep(1)
         """订单备注"""
         self.driver.find_element_by_css_selector(
             "html body div.smartRegister-page div.orderinfo-wrap div.order-content textarea").send_keys(
